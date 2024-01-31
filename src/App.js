@@ -12,6 +12,9 @@ import Error from  './pages/Error';
 import Footer from './components/Footer';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+export const baseurl = "https://book-stack-4b6f.onrender.com";
+// export const baseurl = "http://localhost:3000";
+
 function Roots(){
   const location = useLocation();
 
@@ -37,6 +40,7 @@ function Roots(){
 }
 
 function App(){
+
   return(
   <BrowserRouter basename={"/BookStack"}>
     <Roots/>

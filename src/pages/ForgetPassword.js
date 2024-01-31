@@ -4,6 +4,7 @@ import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "../components/images/book_logo_final.jpg"
+import { baseurl } from "../App";
 
 const ForgetPassword = () => {
 
@@ -29,7 +30,7 @@ const ForgetPassword = () => {
     console.log(login);
 
     try {
-      const response = await fetch("http://localhost:3000/api/auth/forgot-password", {
+      const response = await fetch(baseurl+"/api/auth/forgot-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
