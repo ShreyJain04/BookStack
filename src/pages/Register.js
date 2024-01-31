@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "../components/images/books.png"
 
 const Register = () => {
   const [user, setUser] = useState({
@@ -68,7 +69,7 @@ const Register = () => {
             href="#"
             class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
           >
-            <img class="w-12 h-12 mr-2" src="/images/books.png" alt="logo" />
+            <img class="w-12 h-12 mr-2" src={logo} alt="logo" />
             BookStack
           </a>
           <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -187,12 +188,12 @@ const Register = () => {
                 </button>
                 <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                   Already have an account?{" "}
-                  <a
-                    href="/login"
+                  <Link
+                    to="/login"
                     class="font-medium text-my_blue hover:underline dark:text-my_blue"
                   >
                     Login here
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>

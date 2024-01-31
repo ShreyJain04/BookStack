@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink ,Link } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import logo from "../components/images/books.png"
 
 const Navbar = () => {
   const { isLoggedIn } = useAuth();
@@ -9,7 +10,7 @@ const Navbar = () => {
       <nav class="bg-my_pink1 drop-shadow-lg dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="/images/books.png" class="h-16" alt="Flowbite Logo" />
+            <img src={logo} class="h-16" alt="Flowbite Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               BookStack
             </span>
@@ -52,56 +53,56 @@ const Navbar = () => {
           >
             <ul class=" flex flex-col p-2 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-my_pink4 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Search a book
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               {isLoggedIn ? (
                 <li>
-                  <a
-                    href="/logout"
+                  <Link
+                    to="/logout"
                     class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Logout
-                  </a>
+                  </Link>
                 </li>
               ) : (
                 <>
                   <li>
-                    <a
-                      href="/register"
+                    <Link
+                      to="/register"
                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                       Sign up
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/login"
+                    <Link
+                      to="/login"
                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-my_blue md:p-0 md:dark:hover:text-my_blue dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                       Login
-                    </a>
+                    </Link>
                   </li>
                 </>
               )}

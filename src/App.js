@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import {BrowserRouter, Routes,Route,Navigate, useLocation} from 'react-router-dom'
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Services from './pages/Services';
@@ -12,13 +12,15 @@ import Error from  './pages/Error';
 import Footer from './components/Footer';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-const App =() => {
+function Roots(){
+  const location = useLocation();
+
   return (
-    <>
-      <BrowserRouter>
+      <>
       <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
+        <Routes location={location} key={location.key}> 
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/' element={<Navigate to="/home"/>}/>
           <Route path='/services' element={<Services/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/register' element={<Register/>}/>
@@ -29,9 +31,16 @@ const App =() => {
           <Route path='*' element={<Error/>}/>
         </Routes>
         <Footer/>
-      </BrowserRouter>
-    </>
+     
+        </>
   );
 }
-export default App
+
+function App(){
+  return(
+  <BrowserRouter basename={"/BookStack"}>
+    <Roots/>
+  </BrowserRouter> )
+}
+export default App;
 

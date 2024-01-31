@@ -1,4 +1,5 @@
 import { useAuth } from "../store/auth";
+import applelogo from "../components/images/Screenshot 2024-01-14 174056.png"
 
 const Home = () => {
   const {user}= useAuth();  
@@ -109,7 +110,7 @@ const Home = () => {
           <div class="flex items-center justify-center w-full h-96 md:w-1/2 ">
             <img
               class="object-cover w-full h-full max-w-2xl rounded-md"
-              src="/images/Screenshot 2024-01-14 174056.png"
+              src={applelogo}
               alt="apple watch photo"
             />
           </div>
