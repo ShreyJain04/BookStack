@@ -3,13 +3,13 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/lib/esm/**/*.js",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         my_gray: "#B9B4C7",
-        my_blue: "#610C9F",
+        my_blue: "#6C22A6",
         my_purple: "#400769",
         my_darkgray: "#A9A9A9",
         my_blueblack: "#352F44",

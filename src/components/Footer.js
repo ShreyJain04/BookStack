@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <>
-      <footer class="fixed bottom-0 left-0 z-20 w-full h-4 p-3 bg-my_pink5 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-        <span class="text-sm text-my_blueblack sm:text-center dark:text-gray-400">
+      <footer class="fixed bottom-0 left-0 z-20 w-full h-4 mt-0  p-4 bg-my_pink5 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <span class="flex mb-1 text-sm text-my_blueblack sm:text-center  dark:text-gray-400 mt-0">
           © 2023{" "}
           <a href="https://flowbite.com/" class="hover:underline">
             BookStack™
@@ -10,7 +10,7 @@ const Footer = () => {
           . All Rights Reserved.
         </span>
 
-        <div class="flex mt-2 mr-8 sm:justify-center sm:mt-0">
+        <div class="flex mt-2 mr-8 sm:justify-center sm:mt-0 ">
               <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                   <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                         <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>

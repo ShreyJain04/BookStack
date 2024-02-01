@@ -3,7 +3,7 @@ import { useNavigate ,Link} from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import logo from "../components/images/book_logo_final.jpg"
+import logo from "../components/images/logo2.png"
 import { baseurl } from "../App";
 
 const Register = () => {

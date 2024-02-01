@@ -1,12 +1,12 @@
 import { useAuth } from "../store/auth";
-import applelogo from "../components/images/Screenshot 2024-01-14 174056.png"
+import image1 from "../components/images/image1.png"
 
 const Home = () => {
   const {user}= useAuth();  
   return (
     <>
-      <header class="bg-white dark:bg-gray-800 my-44 mx-20 sm: mx-10">
-        <div class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
+      <header class="bg-white dark:bg-gray-800 my-44 mx-7 sm: mx-10">
+        <div class="container flex flex-col px-3 py-4 mx-auto space-y-6 md:h-128 md:py-16 md:flex-row md:items-center md:space-x-6">
           <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
             <div class="flex justify-center order-2 mt-6 md:mt-0 md:space-y-3 md:flex-col">
               <button class="w-3 h-3 mx-2 bg-red-700 rounded-full md:mx-0 focus:outline-none"></button>
@@ -110,7 +110,7 @@ const Home = () => {
           <div class="flex items-center justify-center w-full h-96 md:w-1/2 ">
             <img
               class="object-cover w-full h-full max-w-2xl rounded-md"
-              src={applelogo}
+              src={image1}
               alt="apple watch photo"
             />
           </div>
