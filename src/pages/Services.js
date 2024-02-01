@@ -81,7 +81,7 @@ const Services = () => {
         </div>
         <button
           type="submit"
-          class="p-2.5 ms-2 text-sm font-medium text-white bg-my_blue rounded-lg border border-blue-700 hover:bg-my_purple focus:ring-4 focus:outline-none focus:ring-my_purple dark:bg-blue-600 dark:hover:bg-my_purple dark:focus:ring-my_purple"
+          class="p-3.5 ms-2 text-sm font-medium text-white bg-purple-700 rounded-lg border border-blue-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-my_purple dark:bg-blue-600 dark:hover:bg-my_purple dark:focus:ring-my_purple"
           onClick={getBookInfo}
         >
           <svg

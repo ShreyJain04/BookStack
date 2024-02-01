@@ -112,9 +112,9 @@ const Contact = () => {
             />{" "}
             <br />
             <button
-              type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-my_blue sm:w-fit hover:bg-my_purple focus:ring-4 focus:outline-none focus:ring-my_purple dark:bg-my_purple dark:hover:bg-my_purple dark:focus:ring-my_purple"
-            >
+                  type="Submit"
+                  class=" w-full  focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                >
               Submit
             </button>
           </div>
