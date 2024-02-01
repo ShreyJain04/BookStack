@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BookStack/static/css/main.cf988c0b.css",
-    "main.js": "/BookStack/static/js/main.d2306886.js",
-    "static/media/Screenshot 2024-01-14 174056.png": "/BookStack/static/media/Screenshot 2024-01-14 174056.29821b3c024574dcfd94.png",
-    "static/media/book_logo_final.jpg": "/BookStack/static/media/book_logo_final.2642439ec02f621c4657.jpg",
+    "main.css": "/BookStack/static/css/main.a526178e.css",
+    "main.js": "/BookStack/static/js/main.f256f4c4.js",
+    "static/media/image1.png": "/BookStack/static/media/image1.29821b3c024574dcfd94.png",
+    "static/media/logo2.png": "/BookStack/static/media/logo2.59b9c1b7c1300d67ac00.png",
     "index.html": "/BookStack/index.html",
-    "main.cf988c0b.css.map": "/BookStack/static/css/main.cf988c0b.css.map",
-    "main.d2306886.js.map": "/BookStack/static/js/main.d2306886.js.map"
+    "main.a526178e.css.map": "/BookStack/static/css/main.a526178e.css.map",
+    "main.f256f4c4.js.map": "/BookStack/static/js/main.f256f4c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf988c0b.css",
-    "static/js/main.d2306886.js"
+    "static/css/main.a526178e.css",
+    "static/js/main.f256f4c4.js"
   ]
 }
